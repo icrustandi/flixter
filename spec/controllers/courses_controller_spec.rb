@@ -9,8 +9,10 @@ RSpec.describe CoursesController, type: :controller do
   end
   describe "GET show" do
     it "renders show course page for students" do
-      get :show
+      course = Course.create!
+      get :show, id: course.id
       expect(response).to render_template("show")
+
     end
   end
 end
