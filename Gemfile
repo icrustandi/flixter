@@ -50,7 +50,9 @@ gem 'sprockets', '2.11.0'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 gem 'devise', '>=3.2.4'
-
+gem 'carrierwave'
+gem 'figaro'
+gem 'fog'
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'capybara'
