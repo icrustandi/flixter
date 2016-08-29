@@ -61,3 +61,4 @@ group :development, :test do
 end
 gem 'stripe'
 gem 'ranked-model'
+gem 'jquery-ui-rails'
