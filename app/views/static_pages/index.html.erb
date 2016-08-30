@@ -3,9 +3,11 @@
 <br />
   <div class="frosty col-xs-10 col-xs-offset-1 text-center">
     <br />
-    <h1>I'm a professional</h1>
+    <h1>Are you an expert with knowledge to share?</h1>
     <br />
-    <h2>Trust me.</h2>
+    <h2>Do you pretend to be an expert?</h2>
+    <br />
+    <h4>Pseudoprofessionals Welcome</h4>
     <br />
     <%= link_to 'Learn More', courses_path, class: 'btn btn-success'%>
     <br /><br />
@@ -15,15 +17,27 @@
 <br />
 <div class="col-xs-10 col-xs-offset-1 features text-center">
   <div class="col-sm-4">
-    <h3>Feature 1</h3>
+    <%= image_tag 'instruction.png' %>
+    <h3>Instructionals</h3>
+    <p>
+    Do you have a topic, skill, and/or passion that you'd like to teach? Share your wisdom here. Thinking of uploading an instructional video on inane tasks? It can't be any worse than BuzzFeed - knock yourself out! 
+    </p>
   </div>
 
   <div class="col-sm-4">
-    <h3>Feature 2</h3>
+    <%= image_tag 'video.png' %>
+    <h3>Videos</h3>
+    <p>
+    Yes, believe it or not, we support video uploads. Try to see if you can fill up my Amazon S3 account to capacity!
+    </p>
   </div>
 
   <div class="col-sm-4">
-    <h3>Feature 3</h3>
+    <%= image_tag 'free.png' %>
+    <h3>Free Premium Lessons</h3>
+    <p>
+    For a limited time - enroll in any premium course for free! Stripe is currently in test mode for the foreseeable future, which means you can use any dummy credit card number to enroll. Instructors note - this also means you won't get paid for your premium course. Win some, lose some.
+    </p>
   </div>
 </div>
 <!--Features boxes -->

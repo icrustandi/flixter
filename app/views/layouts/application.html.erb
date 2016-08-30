@@ -21,7 +21,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Flixter</a>
+      <%= link_to 'Flixter', root_path, class: 'navbar-brand' %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,9 +59,41 @@
 
  <div id="footer">
     <div class="container">
-      <b>Instructors</b>
-      <br />
-      <%= link_to 'Teach a course', new_instructor_course_path %>
+      <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Author', author_path %>
+        <br />
+        <%= link_to 'Careers', careers_path %>
+        <br />
+        <%= link_to 'Privacy Policy', privacy_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        icrustandi@gmail.com
+      </div>
+      <div class="col-xs-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <%= link_to 'http://github.com/icrustandi' do %>
+          <%= image_tag 'github.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'http://www.linkedin.com/in/irustandi' do %>
+          <%= image_tag 'linkedin.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://www.facebook.com/irustandi' do %>
+          <%= image_tag 'facebook.png', class: 'social-button' %>
+        <% end %>
+
+      </div>
     </div>
   </div>
 </body>
